@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="w3-card-2 topnav notranslate" id="topnav" style="position: fixed; top: 0px;">
+    <div style="overflow:auto;">
+      <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
+        <a href="javascript:void(0);" class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button" onclick="open_menu()" title="Menu" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;"></a>
+        <a href="/default.asp" class="topnav-icons fa fa-home w3-left w3-bar-item w3-button" title="Home" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;"></a>
+        <a class="w3-bar-item w3-button" href="/html/default.asp" title="HTML Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML</a>
+        <a class="w3-bar-item w3-button" href="/css/default.asp" title="CSS Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS</a>
+        <a class="w3-bar-item w3-button" href="/js/default.asp" title="JavaScript Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JAVASCRIPT</a>
+        <a class="w3-bar-item w3-button" href="/sql/default.asp" title="SQL Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">SQL</a>
+        <a class="w3-bar-item w3-button" href="/python/default.asp" title="Python Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PYTHON</a>
+        <a class="w3-bar-item w3-button" href="/php/default.asp" title="PHP Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PHP</a>
+        <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp" title="Bootstrap Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">BOOTSTRAP</a>
+        <a class="w3-bar-item w3-button" href="/howto/default.asp" title="How To" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HOW TO</a>
+        <a class="w3-bar-item w3-button" href="/w3css/default.asp" title="W3.CSS Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">W3.CSS</a>
+        <a class="w3-bar-item w3-button" href="/jquery/default.asp" title="jQuery Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JQUERY</a>
+        <a class="w3-bar-item w3-button" href="/java/default.asp" title="Java Tutorial" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JAVA</a>
+        <a class="w3-bar-item w3-button" id="topnavbtn_tutorials" href="javascript:void(0);" onclick="w3_open_nav(&quot;tutorials&quot;)" title="Tutorials" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">MORE <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+        <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="open_search(this)" title="Search W3Schools" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;"></a>
+        <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="open_translate(this)" title="Translate W3Schools" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;"></a>
+        <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button" onclick="changecodetheme(this)" title="Toggle Dark Code" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;"></a>
+        <a class="w3-bar-item w3-button w3-right" target="_blank" href="/forum/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">FORUM</a>
+        <a class="w3-bar-item w3-button w3-right" id="topnavbtn_exercises" href="javascript:void(0);" onclick="w3_open_nav(&quot;exercises&quot;)" title="Exercises" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">EXERCISES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+        <a class="w3-bar-item w3-button w3-right" id="topnavbtn_references" href="javascript:void(0);" onclick="w3_open_nav(&quot;references&quot;)" title="References" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">REFERENCES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a>
+      </div>
+      <div id="nav_tutorials" class="w3-bar-block w3-card-2" style="display:none;">
+        <span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span>
+        <div class="w3-row-padding" style="padding:24px 48px">
+          <div class="w3-col l3 m6">
+            <h3>HTML and CSS</h3>
+            <a class="w3-bar-item w3-button" href="/html/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn HTML</a>
+            <a class="w3-bar-item w3-button" href="/css/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn CSS</a>
+            <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ver.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Bootstrap</a>
+            <a class="w3-bar-item w3-button" href="/w3css/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn W3.CSS</a>
+            <a class="w3-bar-item w3-button" href="/colors/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Colors</a>
+            <a class="w3-bar-item w3-button" href="/icons/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Icons</a>
+            <a class="w3-bar-item w3-button" href="/graphics/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Graphics</a>
+            <a class="w3-bar-item w3-button" href="/graphics/svg_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn SVG</a>
+            <a class="w3-bar-item w3-button" href="/graphics/canvas_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Canvas</a>
+            <a class="w3-bar-item w3-button" href="/howto/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn How To</a>
+            <a class="w3-bar-item w3-button" href="/sass/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Sass</a>          
+            <div class="w3-hide-large w3-hide-small">
+              <h3>XML</h3>
+              <a class="w3-bar-item w3-button" href="/xml/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML</a>
+              <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML AJAX</a>
+              <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML DOM</a>
+              <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML DTD</a>
+              <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML Schema</a>
+              <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XSLT</a>
+              <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XPath</a>
+              <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XQuery</a>
+            </div>
+          </div>
+          <div class="w3-col l3 m6">
+            <h3>JavaScript</h3>
+            <a class="w3-bar-item w3-button" href="/js/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn JavaScript</a>
+            <a class="w3-bar-item w3-button" href="/jquery/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn jQuery</a>
+            <a class="w3-bar-item w3-button" href="/react/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn React</a>
+            <a class="w3-bar-item w3-button" href="/angular/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn AngularJS</a>
+            <a class="w3-bar-item w3-button" href="/js/js_json_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn JSON</a>
+            <a class="w3-bar-item w3-button" href="/js/js_ajax_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn AJAX</a>
+            <a class="w3-bar-item w3-button" href="/w3js/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn W3.JS</a>
+            <h3>Programming</h3>
+            <a class="w3-bar-item w3-button" href="/python/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Python</a>
+            <a class="w3-bar-item w3-button" href="/java/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Java</a>
+            <a class="w3-bar-item w3-button" href="/cpp/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn C++</a>
+            <a class="w3-bar-item w3-button" href="/cs/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn C#</a>
+            <a class="w3-bar-item w3-button" href="/python/python_ml_getting_started.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Machine Learning</a>
+            <div class="w3-hide-small"><br class="w3-hide-medium w3_hide-small"><br class="w3-hide-medium w3_hide-small"></div>
+          </div>
+          <div class="w3-col l3 m6">
+            <h3>Server Side</h3>
+            <a class="w3-bar-item w3-button" href="/sql/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn SQL</a>
+            <a class="w3-bar-item w3-button" href="/php/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn PHP</a>
+            <a class="w3-bar-item w3-button" href="/asp/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn ASP</a>
+            <a class="w3-bar-item w3-button" href="/nodejs/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Node.js</a>
+            <a class="w3-bar-item w3-button" href="/nodejs/nodejs_raspberrypi.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn Raspberry Pi</a>          
+            <h3>Web Building</h3>
+            <a class="w3-bar-item w3-button" href="/w3css/w3css_templates.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Web Templates</a>
+            <a class="w3-bar-item w3-button" href="/browsers/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Web Statistics</a>
+            <a class="w3-bar-item w3-button" href="/cert/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Web Certificates</a>
+            <a class="w3-bar-item w3-button" href="/tryit/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Web Editor</a>
+            <a class="w3-bar-item w3-button" href="/whatis/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Web Development</a>
+            <a class="w3-bar-item w3-button" href="/typingspeed/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Test Your Typing Speed</a>
+          </div>
+          <div class="w3-col l3 m6 w3-hide-medium">
+            <h3>XML</h3>
+            <a class="w3-bar-item w3-button" href="/xml/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML</a>
+            <a class="w3-bar-item w3-button" href="/xml/ajax_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML AJAX</a>
+            <a class="w3-bar-item w3-button" href="/xml/dom_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML DOM</a>
+            <a class="w3-bar-item w3-button" href="/xml/xml_dtd_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML DTD</a>
+            <a class="w3-bar-item w3-button" href="/xml/schema_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XML Schema</a>
+            <a class="w3-bar-item w3-button" href="/xml/xsl_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XSLT</a>
+            <a class="w3-bar-item w3-button" href="/xml/xpath_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XPath</a>
+            <a class="w3-bar-item w3-button" href="/xml/xquery_intro.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Learn XQuery</a>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div id="nav_references" class="w3-bar-block w3-card-2" style="display: none;">
+        <span onclick="w3_close_nav(&quot;references&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span>
+        <div class="w3-row-padding" style="padding:24px 48px">
+          <div class="w3-col l3 m6">
+            <h3>HTML</h3>
+            <a class="w3-bar-item w3-button" href="/tags/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Tag Reference</a>
+            <a class="w3-bar-item w3-button" href="/tags/ref_eventattributes.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Event Reference</a>
+            <a class="w3-bar-item w3-button" href="/colors/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Color Reference</a>
+            <a class="w3-bar-item w3-button" href="/tags/ref_attributes.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Attribute Reference</a>
+            <a class="w3-bar-item w3-button" href="/tags/ref_canvas.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Canvas Reference</a>
+            <a class="w3-bar-item w3-button" href="/graphics/svg_reference.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML SVG Reference</a>
+            <a class="w3-bar-item w3-button" href="/charsets/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Character Sets</a>
+            <a class="w3-bar-item w3-button" href="/graphics/google_maps_reference.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Google Maps Reference</a>
+            <h3>CSS</h3>
+            <a class="w3-bar-item w3-button" href="/cssref/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Reference</a>
+            <a class="w3-bar-item w3-button" href="/cssref/css3_browsersupport.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Browser Support</a>
+            <a class="w3-bar-item w3-button" href="/cssref/css_selectors.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Selector Reference</a>
+            <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_ref_all_classes.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Bootstrap 3 Reference</a>
+            <a class="w3-bar-item w3-button" href="/bootstrap4/bootstrap_ref_all_classes.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Bootstrap 4 Reference</a>
+            <a class="w3-bar-item w3-button" href="/w3css/w3css_references.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">W3.CSS Reference</a>
+            <a class="w3-bar-item w3-button" href="/icons/icons_reference.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Icon Reference</a>
+            <a class="w3-bar-item w3-button" href="/sass/sass_functions_string.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Sass Reference</a>
+         </div>
+          <div class="w3-col l3 m6">
+            <h3>JavaScript</h3>
+            <a class="w3-bar-item w3-button" href="/jsref/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JavaScript Reference</a>
+            <a class="w3-bar-item w3-button" href="/jsref/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML DOM Reference</a>
+            <a class="w3-bar-item w3-button" href="/jquery/jquery_ref_overview.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">jQuery Reference</a>
+            <a class="w3-bar-item w3-button" href="/angular/angular_ref_directives.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">AngularJS Reference</a>
+            <a class="w3-bar-item w3-button" href="/w3js/w3js_references.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">W3.JS Reference</a>
+            <h3>Programming</h3>
+            <a class="w3-bar-item w3-button" href="/python/python_reference.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Python Reference</a>
+            <a class="w3-bar-item w3-button" href="/java/java_ref_keywords.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Java Reference</a>
+          </div>
+          <div class="w3-col l3 m6">
+            <h3>Server Side</h3>
+            <a class="w3-bar-item w3-button" href="/sql/sql_ref_keywords.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">SQL Reference</a>
+            <a class="w3-bar-item w3-button" href="/php/php_ref_overview.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PHP Reference</a>
+            <a class="w3-bar-item w3-button" href="/asp/asp_ref_response.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">ASP Reference</a>
+            <h3>XML</h3>
+            <a class="w3-bar-item w3-button" href="/xml/dom_nodetype.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XML Reference</a>
+            <a class="w3-bar-item w3-button" href="/xml/dom_http.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XML Http Reference</a>
+            <a class="w3-bar-item w3-button" href="/xml/xsl_elementref.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XSLT Reference</a>
+            <a class="w3-bar-item w3-button" href="/xml/schema_elements_ref.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XML Schema Reference</a>
+          </div>
+          <div class="w3-col l3 m6 w3-hide-medium w3-hide-small">
+            <h3>Character Sets</h3>
+            <a class="w3-bar-item w3-button" href="/charsets/default.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Character Sets</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_ascii.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML ASCII</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML ANSI</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_ansi.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Windows-1252</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_8859.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML ISO-8859-1</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_symbols.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Symbols</a>
+            <a class="w3-bar-item w3-button" href="/charsets/ref_html_utf8.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML UTF-8</a>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div id="nav_exercises" class="w3-bar-block w3-card-2" style="display: none;">
+        <span onclick="w3_close_nav(&quot;exercises&quot;)" class="w3-button w3-xlarge w3-right" style="position:absolute;right:0;font-weight:bold;">×</span>
+        <div class="w3-row-padding" style="padding:24px 48px">
+          <div class="w3-col l4 m6">
+            <h3>Exercises</h3>
+            <a class="w3-bar-item w3-button" href="/html/html_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Exercises</a>
+            <a class="w3-bar-item w3-button" href="/css/css_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Exercises</a>
+            <a class="w3-bar-item w3-button" href="/js/js_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JavaScript Exercises</a>
+            <a class="w3-bar-item w3-button" href="/sql/sql_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">SQL Exercises</a>
+            <a class="w3-bar-item w3-button" href="/php/php_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PHP Exercises</a>
+            <a class="w3-bar-item w3-button" href="/python/python_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Python Exercises</a>
+            <a class="w3-bar-item w3-button" href="/jquery/jquery_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">jQuery Exercises</a>
+            <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Bootstrap Exercises</a>
+            <a class="w3-bar-item w3-button" href="/java/java_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Java Exercises</a>
+            <a class="w3-bar-item w3-button" href="/cpp/cpp_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">C++ Exercises</a>
+            <a class="w3-bar-item w3-button" href="/cs/cs_exercises.asp" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">C# Exercises</a>
+          </div>
+          <div class="w3-col l4 m6">
+            <h3>Quizzes</h3>
+            <a class="w3-bar-item w3-button" href="/html/html_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Quiz</a>
+            <a class="w3-bar-item w3-button" href="/css/css_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Quiz</a>
+            <a class="w3-bar-item w3-button" href="/js/js_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JavaScript Quiz</a>
+            <a class="w3-bar-item w3-button" href="/sql/sql_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">SQL Quiz</a>
+            <a class="w3-bar-item w3-button" href="/php/php_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PHP Quiz</a>
+            <a class="w3-bar-item w3-button" href="/python/python_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Python Quiz</a>
+            <a class="w3-bar-item w3-button" href="/jquery/jquery_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">jQuery Quiz</a>
+            <a class="w3-bar-item w3-button" href="/bootstrap/bootstrap_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Bootstrap Quiz</a>
+            <a class="w3-bar-item w3-button" href="/java/java_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Java Quiz</a>
+            <a class="w3-bar-item w3-button" href="/cpp/cpp_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">C++ Quiz</a>
+            <a class="w3-bar-item w3-button" href="/cs/cs_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">C# Quiz</a>
+            <a class="w3-bar-item w3-button" href="/xml/xml_quiz.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XML Quiz</a>
+          </div>
+          <div class="w3-col l4 m12">
+           <h3>Certificates</h3>
+           <a class="w3-bar-item w3-button" href="/cert/cert_html_new.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">HTML Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_css.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">CSS Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_javascript.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">JavaScript Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_sql.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">SQL Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_php.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">PHP Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_python.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Python Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_jquery.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">jQuery Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_bootstrap.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">Bootstrap Certificate</a>
+           <a class="w3-bar-item w3-button" href="/cert/cert_xml.asp" target="_top" style="cursor: url(&quot;chrome-extension://iclinnjcnpihmbogglkigdkhkeajbcck/cursors/pointers/light-darkblue.png&quot;), auto;">XML Certificate</a>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
